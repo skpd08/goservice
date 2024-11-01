@@ -1,5 +1,7 @@
 pipeline {
   agent any
+  
+  tools { go 'GO' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
